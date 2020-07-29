@@ -49,6 +49,7 @@
                     <div class="table">
                         <div class="table-cell">
                             <div class="intro-text container">
+                                <img class="logoslide" src="images/Altcab.png"  alt="logo">
                                 <div class="title clearfix">
                                     <h2>Découvrez ou redécouvrez <span>un Univers</span>, celui du <span>RetroGaming </span> à travers <span>les bornes d'arcade Alt Cab </span></h2>
                                 
@@ -70,6 +71,25 @@
                     <div class=" text-center mb-60 ">
                         <h2><img src="images/produits.png"> </h2>
                        <h5> Découvrez nos laptop, bartop, borne multi et bien d'autres !</h5>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-3">
+                        {% for produit in produits %}
+                            <div class="col mb-4">
+                                <div class="card">
+                                    <div class="card-header text-center">
+                                        <h5 class="mt-10">{{ produit.name }}</h5>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <a class="btn btn-primary btn-sm" href="" role="button"><img class=" h250max" src="{{ asset('uploads/photo/' ~ produit.photo) }}" alt="nop" ></a>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                      peu cher !
+                                    </div>
+                                </div>
+                            </div>   
+                        {% else %}
+                        Aucunue donnée animateur.            
+                        {% endfor %}
                     </div>
                 </div>
             </div>

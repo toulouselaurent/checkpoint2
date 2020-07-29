@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Produit admin{% endblock %}
+
+{% block body %}
+<div class="container-fluid bgbody-index">
+    <h1 class="text-center frontwhite">Liste des produits Altcab</h1>
+    <div class="container bgcont">
+        <a href="{{ path('produit_new') }}" class="btn btn-primary btn-sm mb-2 button_resp mt-10" role="button">Ajouter un produit</a>
+        <div class="row row-cols-1 row-cols-md-3">
+            {% for produit in produits %}
+                <div class="col mb-4">
+                    <div class="card">
+                        <div class="card-header text-center">
+                             {{ produit.id }} {{ produit.name }}
+                        </div>
+                        <div class="card-body text-center">
+                            <img class="h250max" src="{{ asset('uploads/photo/' ~ produit.photo) }}" alt="nop" >
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item"><i class="fa fa-comment-o fa-sizer" aria-hidden="true"></i>{{ produit.description }}</li>
+                        </ul>
+                        <div class="card-footer text-center">
+                            <a class="btn btn-primary btn-sm" href="{{ path('produit_show', {'id': produit.id}) }}" role="button">Voir</a>
+                            <a class="btn btn-warning btn-sm" href="{{ path('produit_edit', {'id': produit.id}) }}" role="button">Modifier</a>
+                        </div>
+                    </div>
+                </div>   
+            {% else %}
+            Aucunue donnée animateur.            
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

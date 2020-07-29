@@ -258,6 +258,39 @@ img {
     max-width: 100%;
 }
 
+.w250max{
+    max-width: 250px;
+}
+.h250max{
+    height: 250px;
+}
+.bgcont{
+    background-color: rgba(246, 244, 244, 0.7);
+}
+.bgbody{
+    background-image: url("/./images/retrogames.png");
+    background-position: center;
+    height: 100%;
+}
+.bgbody-index{
+    background-image: url("/./images/retrogames.png");
+    background-position: center;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.frontwhite{
+    color: white;
+    -webkit-text-stroke:1px black;
+}
+.ptb-15{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.logoslide{
+    padding-bottom: 20px;
+    width: 200px;
+}
 
 /* ----------------------------------------------------------------------------------------
 *            02. Navigation area css
