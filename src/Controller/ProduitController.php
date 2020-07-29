@@ -13,7 +13,7 @@ use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\Filesystem\Filesystem;
 
 /**
- * @Route("/admin")
+ * @Route("/admin/index")
  */
 class ProduitController extends AbstractController
 {

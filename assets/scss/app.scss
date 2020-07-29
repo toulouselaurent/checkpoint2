@@ -257,7 +257,10 @@ fieldset {
 img {
     max-width: 100%;
 }
-
+.imgshow{
+    max-width: 70%;
+    max-height: 600px;
+}
 .w250max{
     max-width: 250px;
 }
@@ -275,6 +278,11 @@ img {
 .bgbody-index{
     background-image: url("/./images/retrogames.png");
     background-position: center;
+}
+.bgbody-show{
+    background-image: url("/./images/bg1.jpg");
+    background-position: center;
+    height: 100%;
 }
 .mt-10{
     margin-top: 10px;

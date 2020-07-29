@@ -80,7 +80,7 @@
                                         <h5 class="mt-10">{{ produit.name }}</h5>
                                     </div>
                                     <div class="card-body text-center">
-                                        <a class="btn btn-primary btn-sm" href="" role="button"><img class=" h250max" src="{{ asset('uploads/photo/' ~ produit.photo) }}" alt="nop" ></a>
+                                        <a class="btn btn-primary btn-sm" href="{{ path('index_produit_show', {'id': produit.id}) }}" role="button"><img class=" h250max" src="{{ asset('uploads/photo/' ~ produit.photo) }}" alt="nop" ></a>
                                     </div>
                                     <div class="card-footer text-center">
                                       peu cher !
@@ -325,7 +325,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="copy-right">
-                        <p>Copyright &copy;2019. Designed by TL</p>
+                        <p>Copyright &copy;2020. Designed by TL</p>
                     </div>
                 </div>
             </div>
